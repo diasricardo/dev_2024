@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoria HTMl</title>
+    <style>
+        /* Comentario no css é diferente */
+        /* Se eu aplicar cor de fundo em todos os p irá aplicar em todos */
+        p {
+            background-color: aqua;
+        }
+
+        /* Para aplicar somente em um elemento, usamos uma classe para identifica-lo */
+
+        .paragrafo{
+            background-color: blue;
+        }
+
+        .imagem{
+            width: 150px;
+            height: 100px;
+        }
+
+        h3{
+            color: red;
+        }
+
+        table{
+            text-align: center;
+        }
+        th{
+            background-color: gray;
+            color: antiquewhite;
+        }
+
+        .linha1{
+            background-color: gray;
+        }
+        .linha2{
+            background-color: rgb(212, 206, 206);
+        }
+    </style>
+</head>
+<body>
+    <!-- Inicio aula 05 -->
+     <!--Titulos de nivel 1 até nivel 6 -->
+     <h1>Esse é um cabeçalho de nivel 1</h1>
+     <h2>Esse é um cabeçalho de nivel 2</h2>
+     <h3>Esse é um cabeçalho de nivel 3</h3>
+     <h4>Esse é um cabeçalho de nivel 4</h4>
+     <h5>Esse é um cabeçalho de nivel 5</h5>
+     <h6>Esse é um cabeçalho de nivel 6</h6>
+
+     <!-- Insere uma linha horizontal -->
+      <hr>
+      
+
+    <!--Com a tag p é inserido um novo parágrafo-->
+    <p>Este é um parágrafo</p>
+    <p>Outro parágrafo</p>
+    <hr>
+    
+    <!--Inserindo um link para abrir outra página usando o atributo href-->
+    <a href="wwww.sesi.org.br"></a>
+
+    <!-- Criando link utilizando atributo _blank para abrir
+    site em nova aba, temos outros como self, parent, top -->
+    <p> <a href="https://www.sesisp.org.br/" target="_blank">Abrir site SESI</a>  </p>
+
+     <!-- A tag <br> quebra uma linha ela é uma tag
+    sem fechamento -->
+    <p>Este é um texto <br>
+        grande que desejo <br>
+        quebrar linha</p>
+    <!-- fim até atividade 02 -->
+ 
+
+    <!-- Tag img para adicionar uma imagem, coloco no 
+    atributo src o endereço da minha imagem-->
+    <!-- criar a pasta img -->
+    <img src="./img/praia.jpg" alt="Foto de uma praia">
+
+    <!--Para utilizar simbolos ou caracteres preciso
+    inserir o código dele ex 
+    &lt; <
+    &gt; >
+    Bliblioteca de simbolos em 
+    https://www.w3schools.com/charsets/ref_utf_symbols.asp   -->
+    <p>
+        Para a quebra de linha utilizamos a tag &lt;br&gt;
+    </p>
+
+    <p>&reg; &copy; &trade; &euro; &pound; &yen; &cent; &delta; &uarr; </p>
+    
+    <!--Para inserir um emoji pego o hexadecimal do site
+    emojipedia.org e coloco depois de &#x -->
+    <p> Inserindo um emoji &#x1F60A &#x2764 </p>
+
+    <!-- Tags para Formatação e enfatização de texto -->
+    <b>- Texto em negrito </b> <br>
+    <strong>- texto importante</strong> <br>
+    <i>- texto em itálico</i> <br>
+    <em>- Texto enfatizado</em> <br>
+    <mark> - texto marcado</mark> <br>
+    <small>- Texto menor</small> <br>
+    <del> - texto excluído</del> <br>
+    <ins>- texto inserido</ins> <br>
+    <sub>- Texto subscrito</sub> <br>
+    <sup>- Texto sobrescrito</sup> <br>
+    <u> - texto Sublinhado</u> <br>
+
+    <!--Navegando entre as telas de exercício-->
+    <p><a href="ex001.html">Exercício 001</a></p>
+    <p><a href="ex002.html">Exercício 002</a></p>
+
+
+
+
+<!--Realizar a atividade 03 e 04 e ajustar a index.html-->
+<!--Continuação conteúdo Aula 06-->
+
+
+      <!--Inserindo videos atraves do youtube-->
+      <p style="font-size: xx-large;">Videos do Youtube</p>
+      <br><iframe width="1269" height="714" src="https://www.youtube.com/embed/sAifOnz63cE" title="Figma Variables - Criando temas light e dark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     
+
+        <!-- Criando link com uma imagem -->
+         <!--CSS internto ir par o style no head-->
+         <!-- criar primeiro as tags e depois aplicar o css interno, ensinando a diferença de aplicação de tamanho -->
+        <hr>
+        <p class="paragrafo">
+            <a href="https://www.google.com" target="_blank">
+                <img src="./img/google.png" alt="">
+            </a>
+        </p>
+    <br>
+
+
+     <!-- Lista não ordenada -->
+     <ul style="list-style-type: trad-chinese-formal;">
+        <li>Carvão</li>
+        <li>Carne</li>
+        <li>Linguiça</li>
+        <li>Bebidas</li>
+        <li>Mandioca</li>
+        <li>Gelo</li>
+    </ul>
+
+    <hr>
+
+    <!-- Lista Ordenada padrão -->
+    <ol>
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a escola</li>
+        <li>Almoçar</li>        
+    </ol>
+
+    <hr>
+
+    <!-- Lista Ordenada com romano minusculo -->
+    <ol type="i">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a escola</li>
+        <li>Almoçar</li>        
+    </ol>
+
+    <!-- Lista Ordenada com letras minusculo -->
+    <ol type="a">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a escola</li>
+        <li>Almoçar</li>        
+    </ol>
+
+    <hr>
+
+    <!-- Lista predefinida -->
+    <dl>
+        <dt>Html</dt>
+        <dd>Linguagem de marcação para conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem para estilização de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem programação para criação de interatividade de um site</dd>
+    </dl>
+
+    <hr>
+
+    <!-- aplicar css color no h3 -->
+    <h3 >Aula 6 - CSS, Tabelas, listas, semantica</h3>
+    <!--Tabelas-->
+    <!--Atributos da tabela como usar-->
+    
+
+    <!--Table define a criação de uma nova tabela-->
+    <!-- aplicar text center na tabela -->
+    <table>
+
+        <!--table row cria uma nova linha na tabela-->
+        <tr>
+            <!-- aplicar cor de fundo diferente no cabeçalho -->
+            <!--table head cria o cabeçalho da tabela-->
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <!--table data cria as celulas de dados-->
+            <td>Ted</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Ralf</td>
+            <td>26</td>
+            <td>Designer</td>
+        </tr>
+    </table>
+
+
+    <!--Tabela com semantica-->
+    <!-- aplicar borda e aplicar  cores diferentes em cada linha -->
+    <table>
+        <thead>
+        <tr>
+            <th>titulo 1</th>
+            <th>titulo 2</th>
+            <th>titulo 3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="linha1">
+            <td>Body1 linha1</td>
+            <td>Body2 linha1</td>
+            <td>Body3 linha1</td>
+        </tr>
+        <tr class="linha2">
+            <td>Body1 linha2</td>
+            <td>Body2 linha2</td>
+            <td>Body3 linha2</td>
+        </tr>
+        </tbody>
+        <tfoot class="linha1">
+            <td>Foot 1</td>
+            <td>Foot 2</td>
+            <td>Foot 3</td>
+        </tfoot>
+     </table>
+
+     <!--Colspan e rowspan-->
+     <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th colspan="2">Telefones</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Ted</td>
+            <td>8888-8888</td>
+            <td>9999-9999</td>
+        </tr>
+        <tr>
+            <td>1111-1111</td>
+            <td>2222-2222</td>
+        </tr>
+    </table>
+
+
+    <!--Atividade tabelas exe06.html-->
+
+      <!-- Estudando formulários-->
+      <br><form style="background-color: rgb(115, 133, 131);">
+        <!-- Label Insere a descrição da informação que irá receber -->
+        <label>Nome:</label> 
+        <!-- Insere um campo digitável do tipo texto -->
+        <input type="text">
+        <br>
+        
+        <label>Sobrenome:</label>
+        <input type="text">
+        <br>
+        
+        <!-- Incluindo um input do tipo botão -->
+        <input type="button" value="Clique aqui">
+        <br>
+
+        <!-- Incluindo Checkbox (Opções) -->
+        <input type="checkbox">Eu tenho uma bicicleta<br>
+        <input type="checkbox">Eu tenho uma moto<br>
+        <input type="checkbox">Eu tenho um carro<br>
+
+        <!-- Selecionando uma cor -->
+        <input type="color" value="#0000ff">
+        <br>
+
+        <!-- Incluindo input do tipo data -->
+        <label>Data de nascimento</label>
+        <input type="date">
+        <br>
+
+        <!-- Incluindo input do tipo data e hora -->
+        <label>Data da prova</label>
+        <input type="datetime-local">
+        <br>
+
+        <!-- Incluindo input do tipo email -->
+        <label>Email</label>
+        <input type="email" placeholder="Digite seu email">
+        
+        <hr>
+
+        <!-- Incluindo input para selecionar arquivo -->
+        <label>Selecione uma foto</label>
+        <input type="file">
+        
+        <hr>
+
+        <!-- Criando um input de seleção -->
+        <select>
+            <option selected value="">Selecione a escolaridade</option>
+            <option value="primeiro grau">1º Grau</option>
+            <option value="segundo grau">2º Grau</option>
+            <option value="terceiro grau">3º Grau</option>                    
+        </select>
+
+        <hr>
+
+        <!-- Criando um input de radio button -->
+        <input type="radio" name="tamanho" >Pequeno <br>
+        <input type="radio" name="tamanho" >Médio <br>
+        <input type="radio" name="tamanho" >Grande 
+        
+        <hr>
+
+        <!-- Incluindo input de senha, com um atributo dizendo que é necessario o preenchimento -->
+        <label>Senha</label>
+        <input type="password" placeholder="Digite a senha" required>
+        
+        <hr>
+        <!-- Criando um grupo de componentes do formulário -->
+        <fieldset>
+            <!-- Adicionando uma legenda do grupo -->
+            <legend>Descrição</legend>
+            <textarea name="" id=""></textarea>
+        </fieldset>
+
+        
+        <!-- Botão de Enviar o formulário -->
+        <input type="submit" value="Enviar">
+
+        <!-- Botão de Limpar Reset -->
+        <input type="reset" value="Limpar">
+
+        <hr>
+
+    </form>
+
+</body>
+</html>
