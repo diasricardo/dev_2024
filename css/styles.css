@@ -1,0 +1,47 @@
+.table2 {
+    /* remove os espaços entre as bordas */
+    border-collapse: collapse;
+    /* faz com que o conteudo ocupe todo o espaço */
+    width: 100%;
+  }
+  
+  .th2, .td2 {
+    /* configura o formato da borda expessura, tipo, cor */
+    border: 1px solid #ddd;
+    /* define o espaçamento interno */
+    padding: 8px;
+    /* define o alinhamento do texto */
+    text-align: left;
+    /* define a cor o texto */
+    color: black;
+  }
+  
+  .th2 {
+    background-color: #f2f2f2;
+  }
+
+.input-nome{
+    /* define a opacidade */
+    opacity: 70%;
+    /* remove a borda do elemento */
+    border: none;
+    /* define a curvatura da borda */
+    border-radius: 2px;
+}
+
+.input-sobrenome{
+    background-color: transparent;
+    border: none;
+    border-bottom: 5px solid #ddd;
+}
+
+.clique-aqui{
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: #e71616;
+    text-shadow: -11px 1px 4px rgba(187, 17, 230, 0.973);
+}

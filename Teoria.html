@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teoria HTMl</title>
+    <link rel="stylesheet" href="css/styles.css">
     <style>
         /* Comentario no css é diferente */
         /* Se eu aplicar cor de fundo em todos os p irá aplicar em todos */
@@ -196,6 +197,8 @@
 
     <hr>
 
+
+    <!-- Aula 07 - tabelas formularios -->
     <!-- aplicar css color no h3 -->
     <h3 >Aula 6 - CSS, Tabelas, listas, semantica</h3>
     <!--Tabelas-->
@@ -226,10 +229,10 @@
             <td>Designer</td>
         </tr>
     </table>
-
+<br>
 
     <!--Tabela com semantica-->
-    <!-- aplicar borda e aplicar  cores diferentes em cada linha -->
+    <!-- aplicar borda e aplicar cores diferentes em cada linha -->
     <table>
         <thead>
         <tr>
@@ -256,6 +259,7 @@
             <td>Foot 3</td>
         </tfoot>
      </table>
+<br>
 
      <!--Colspan e rowspan-->
      <table border="1">
@@ -273,24 +277,49 @@
             <td>2222-2222</td>
         </tr>
     </table>
+<br>
+
+    <table class="table2">
+        <thead>
+          <tr>
+            <th class="th2">Nome</th>
+            <th class="th2">Idade</th>
+            <th class="th2">Cidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td2">João da Silva</td>
+            <td class="td2">30</td>
+            <td class="td2">São Paulo</td>
+          </tr>
+          <tr>
+            <td class="td2">Maria Fernandes</td>
+            <td class="td2">25</td>
+            <td class="td2">Rio de Janeiro</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
 
 
     <!--Atividade tabelas exe06.html-->
 
       <!-- Estudando formulários-->
-      <br><form style="background-color: rgb(115, 133, 131);">
+      <br><form style="background-color: rgb(98, 221, 207);">
         <!-- Label Insere a descrição da informação que irá receber -->
         <label>Nome:</label> 
         <!-- Insere um campo digitável do tipo texto -->
-        <input type="text">
+        <input type="text" class="input-nome">
         <br>
         
         <label>Sobrenome:</label>
-        <input type="text">
+        <input type="text" class="input-sobrenome">
         <br>
         
         <!-- Incluindo um input do tipo botão -->
-        <input type="button" value="Clique aqui">
+        <input type="button" value="Clique aqui" class="clique-aqui">
         <br>
 
         <!-- Incluindo Checkbox (Opções) -->
@@ -353,7 +382,7 @@
             <textarea name="" id=""></textarea>
         </fieldset>
 
-        
+
         <!-- Botão de Enviar o formulário -->
         <input type="submit" value="Enviar">
 
